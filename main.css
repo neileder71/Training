@@ -17,13 +17,22 @@
   .v11_31 {
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(212,146,146,1), rgba(146,169,252,1));
+    background: linear-gradient(270deg, #48c55c, #47c8ac, #16a8e8, #797de8);
+    background-size: 800% 800%;
+
+    animation: AnimationName 22s ease infinite;
     opacity: 1;
     position: absolute;
     top: 0px;
     left: 0px;
     overflow: hidden;
   }
+
+  @keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
   .v11_32 {
     width: 940px;
     height: 400px;
